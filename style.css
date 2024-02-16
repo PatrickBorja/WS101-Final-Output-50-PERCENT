@@ -1,0 +1,136 @@
+/* Add some basic styling for the navbar */
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+}
+/* this is for my background and SECTION's IDs */
+#home {
+    height: 100vh;
+    background-image: url('view photos/Home.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    margin: 0px;
+}
+
+/* this is for my photo in the home section */
+.figure {
+    width: 650px;
+    height: 650px;
+    margin-bottom: 150px;
+}
+
+/* This is HI I'm PATRICK BORJA! */
+.introduction {
+    text-align: center;
+    display: flex;
+    position: absolute;
+    left: 60%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+
+/* This is for about title in ABOUT ME */
+.titleabout {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    font-size: 2em;
+    top: 10%;
+    left: 45%;
+}
+
+
+.homedesc {
+    text-align: left;
+    margin-top: -300px;
+    margin-left: 600px;
+}
+
+/* NAVIGATION BAR! */
+.navbar {
+    text-align: center;
+    position: fixed;
+    top: 10%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    margin: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    transition: transform 0.3s;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    transform: translateY(-5px);
+    color: white;
+    font-size: 1em;
+
+}
+
+/* Add styling for the responsive navigation menu */
+@media screen and (max-width: 600px) {
+  .navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* ABOUT PAGE (GALLERY PICTURES OF ME USING TAYLOR SWIFT's ALBUM) */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.gallery img {
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* ABOUT PAGE (Description) */
+
+.theabout {
+    display: inline;
+    border:  2px solid white;
+    margin-top: 20px;
+}
+
+.descriptionbox {
+    display: flex;
+    margin: 20px;
+    border: #ddd 2px solid;
+}
+.descriptionabout {
+    text-align: justify;
+    margin: 20px;
+}

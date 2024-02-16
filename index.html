@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+            <!--NAVIGATION BAR!!! -->
+        <div class="navbar" id="myNavbar" >
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+<!-- Home Section -->
+    <section id="home">
+        <H2 class="introduction">Hi! I'm Patrick Borja</H2>
+        <div>
+            <img class="figure" src="view photos/Borja.png" alt="His Photo">
+        </div>
+        <div class="homedesc"> 
+            <p>
+                Passionate about learning, my enthusiasm is the driving force behind my commitment in learning.<br> 
+                Exploring new things, and new knowledge brings me genuine joy,
+                and I am eager to contribute <br> my energy and dedication to make a positive impact. Passion, to me, 
+                is the unwavering force <br>that propels me forward in this field.</p>
+        </div>
+    </section>
+
+<!-- ABOUT SECTION -->
+    <section id="about">
+        
+            <H2 class="titleabout">About me</H2>
+
+            <div class="theabout">
+                <div class="gallery">
+
+                    <img src="view photos/Album/1989.jpg" alt="Suit">
+                    <img src="view photos/Album/Cardigan.jpg" alt="Forest">
+                    <img src="view photos/Album/Debut.jpg" alt="Mountain View">
+                    <img src="view photos/Album/Red.jpg" alt="Blurry Image">
+                    <img src="view photos/Album/Reputation.jpg" alt="Black and White">
+                    <img src="view photos/Album/Fearless.jpg" alt="Slaying">
+                    <img src="view photos/Album/Evermore.jpg" alt="Back view">
+                    <img src="view photos/Album/Midnights.jpg" alt="Face">    
+                </div>
+                <div class="descriptionbox">
+                    <div class="descriptionabout">
+                        <p>
+                            I'm Patrick Borja, a BSIT student who finds fulfillment in the simple joys of life. <br>
+                            With a humble approach to learning and a genuine curiosity for knowledge, 
+                            I strive to contribute positively to the world. <br> In my journey, I embrace the lessons each experience offers, 
+                            fostering a mindset of continuous growth and gratitude. <br> I look forward to connecting with others and sharing 
+                            in the collective beauty of life.</p>
+
+                        <p>
+                            I finished my Senior High School on my very hometown. It taught me most things I know today. <br>
+                            But learning doesn't stop at one point, in one zone. It's one thing I learned in my school that <br>
+                            you shouldn't stay at one places. There's so many places to learn, more things to learn.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <script>
+    
+        function toggleNavbar() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+            x.className += " responsive";
+            } else {
+            x.className = "navbar";
+            }
+        }
+    </script>
+
+</body>
+</html>
